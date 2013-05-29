@@ -1,6 +1,5 @@
 use Rack::Static, 
-  :urls => ['/'],
-  :root => 'public',
-  :index => 'index.html'
+  :urls => ['/public', '/vendor', '/focus'],
+  :index => 'public/index.html'
 
 run Rack::File.new('public/')
